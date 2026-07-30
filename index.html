@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completar Frases sobre IA - Drag & Drop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Complete as Frases sobre IA</h1>
+            <p>Arraste as palavras para completar as frases corretamente</p>
+        </header>
+
+        <div class="game-area">
+            <div class="phrases-section">
+                <h2>Frases para Completar</h2>
+                <div id="phrasesContainer" class="phrases-container"></div>
+            </div>
+
+            <div class="words-section">
+                <h2>Palavras Disponíveis</h2>
+                <div id="wordsContainer" class="words-container"></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="resetBtn" class="btn btn-primary">🔄 Reiniciar</button>
+            <button id="checkBtn" class="btn btn-success">✓ Verificar Respostas</button>
+        </div>
+
+        <div id="resultMessage" class="result-message"></div>
+
+        <div class="stats">
+            <p>Acertos: <span id="correctCount">0</span> / <span id="totalCount">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
